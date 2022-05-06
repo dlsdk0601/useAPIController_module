@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { GET, POST } from "./api";
+import GET from "./serverController/Get";
+import POST from "./serverController/Post";
 
 function App() {
   const { data, isSuccess, isLoading, error, isError } = GET.useAllMovies(
